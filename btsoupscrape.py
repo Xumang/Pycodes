@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import sys
  
-url = 'http://www.imdb.com/chart/top'
+url = 'http://www.imdb.com/chart/top' . #source of information for the data is from IMDB
 response = requests.get(url)
 soup = BeautifulSoup(response.text)
 tr = soup.findChildren("tr")
